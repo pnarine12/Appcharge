@@ -47,7 +47,7 @@ root
   ├── cypress.config.js
   ├── package.json
   ├── .gitignore
-  ├── .cypress-cucumber-preprocessorrc
+  ├── .cypress-cucumber-preprocessorrc.json
   ├── .docker-compose.yml
   └── Dockerfile
 ```
