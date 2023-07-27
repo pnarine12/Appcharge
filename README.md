@@ -75,8 +75,8 @@ To run the Cypress Cucumber project with Docker, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
-   cd <root_directory_name>
+   git clone https://github.com/pnarine12/Appcharge.git
+   cd Appcharge-main
    ```
 
 2. **Build the Docker Image:**
@@ -85,6 +85,7 @@ To run the Cypress Cucumber project with Docker, follow these steps:
    ```
 
 4. **Run the Docker Container:**
+
 For Windows
    ```bash
    docker run -it -v PWD:/app my-cypress-tests --browser chrome
