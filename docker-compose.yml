@@ -1,0 +1,19 @@
+version: '3'
+services:
+  electron:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./cypress:/cypress
+      - ./cypress.config.js:/cypress.config.js
+      - ./package.json:/package.json
+  chrome:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "--browser chrome"
+    volumes:
+      - ./cypress:/cypress
+      - ./cypress.config.js:/cypress.config.js
+      - ./package.json:/package.json

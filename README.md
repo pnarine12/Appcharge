@@ -48,6 +48,7 @@ root
   ├── package.json
   ├── .gitignore
   ├── .cypress-cucumber-preprocessorrc
+  ├── .docker-compose.yml
   └── Dockerfile
 ```
 
@@ -67,6 +68,7 @@ root
 - `.gitignore`: Contains files and directories that should not be committed
 - `package.json`: The npm package file containing project dependencies and scripts
 - `.cypress-cucumber-preprocessorrc`: Contains configuration for cucumber
+- `docker-compose.yml`: Contains config for each execution of docker
 - `Dockerfile`: The Docker configuration file used to build the Docker image for the project
 
 ## How to Run
@@ -78,20 +80,16 @@ To run the Cypress Cucumber project with Docker, follow these steps:
    git clone git@github.com:pnarine12/Appcharge.git
    cd Appcharge-main
    ```
-
-2. **Build the Docker Image:**
+2. **Run tests on Chrome:**
    ```bash
-   docker build -t my-cypress-tests .
-   ```
-
-4. **Run the Docker Container:**
-
-For Windows
+   docker-compose up chrome
+   ```   
+3. **Run tests on Electron:**
    ```bash
-   docker run -it -v PWD:/app my-cypress-tests --browser chrome
-   ```
-For Linux
-   ```bash
-   docker run -it -v $PWD:/app my-cypress-tests --browser chrome
+   docker-compose up electron
    ```
    This command will run the Cypress Cucumber tests in Chrome inside the Docker container and output the test results.
+
+## For Appcharge testing challenge deliverables check the link below:
+
+http://surl.li/jmspf
