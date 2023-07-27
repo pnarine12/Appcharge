@@ -64,7 +64,7 @@ root
   - `vidoes/`: Contains video reports
 - `node_modules/`: The npm packages and dependencies required for the project
 
-- `cpres.config.js`: Cypress configuration file
+- `cypress.config.js`: Cypress configuration file
 - `.gitignore`: Contains files and directories that should not be committed
 - `package.json`: The npm package file containing project dependencies and scripts
 - `.cypress-cucumber-preprocessorrc`: Contains configuration for cucumber
